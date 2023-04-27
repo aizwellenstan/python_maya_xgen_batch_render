@@ -98,7 +98,7 @@ def ExportAbc(selection, start, end, save_name):
 def ExportGuideAbc():
     start_frame = cmds.playbackOptions(q=True, min=True)
     end_frame = cmds.playbackOptions(q=True, max=True)
-    curves = cmds.ls("CHShiZhongTian_00:*_tempCurve", long=True)
+    curves = cmds.ls("CH:*_tempCurve", long=True)
     parts = ["BackLong", "Front", "FrontB"]
     curveDict = {}
     for curve in curves:
